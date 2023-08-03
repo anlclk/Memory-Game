@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gameBox {
+    margin-inline: auto;
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+.gameBox button {
+    user-select: none;
+}
+.memory {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 30px);
+}
+.memory button {
+    color: transparent;
+}
+.memory button.visible {
+    color: inherit;
+}
+.memory button.visible, .memory button.matched {
+    color: inherit;
+}
